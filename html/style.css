@@ -1,0 +1,28 @@
+body {
+    background-color: #cccccc; /* fundo cinza claro */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+.quadro1 {
+    width: 150px;          /* largura do quadrado */
+    height: 150px;         /* altura do quadrado */
+    background-color: #bbbbbb;  /* cor de fundo (surpresa kkkk*/
+    color: white;          /* cor do texto */
+    display: flex;         /* usar flexbox para centralizar */
+    justify-content: center; /* centralizar horizontalmente */
+    align-items: center;     /* centralizar verticalmente */
+    border-radius: 8px;    /* cantos arredondados (opcional) */
+    margin: 20px auto;     /* margem vertical e centralizar horizontalmente */
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: #999999; /* precisa do # antes do código */
+    }
+}
