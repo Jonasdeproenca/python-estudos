@@ -9,7 +9,7 @@ h1 {
     color: #333333;
 }
 
-.quadro1 {
+.quadroA {
     width: 150px;          /* largura do quadrado */
     height: 150px;         /* altura do quadrado */
     background-color: #bbbbbb;  /* cor de fundo (surpresa kkkk*/
@@ -19,6 +19,43 @@ h1 {
     align-items: center;     /* centralizar verticalmente */
     border-radius: 8px;    /* cantos arredondados (opcional) */
     margin: 20px auto;     /* margem vertical e centralizar horizontalmente */
+}
+
+.quadroB {
+    width: 150px;          /* largura do quadrado */
+    height: 150px;         /* altura do quadrado */
+    background-color: #FF69B4;  /* cor de fundo (surpresa kkkk*/
+    color: white;          /* cor do texto */
+    display: flex;         /* usar flexbox para centralizar */
+    justify-content: center; /* centralizar horizontalmente */
+    align-items: center;     /* centralizar verticalmente */
+    border-radius: 8px;    /* cantos arredondados (opcional) */
+    margin: 20px auto;     /* margem vertical e centralizar horizontalmente */
+}
+
+.quadroC {
+    width: 150px;
+    height: 150px;
+    background-color: #ADD8E6;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.quadroD {
+    width: 150px;
+    height: 150px;
+    background-color: #f5610b;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 8px;
+    margin: 20px auto;
+
 }
 
 @media (max-width: 600px) {
