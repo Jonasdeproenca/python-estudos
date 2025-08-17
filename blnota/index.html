@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editor de Texto Simples</title>
-    <!-- Link do CSS -->
+    <title>Bloco de Notas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Editor de Texto Simples</h1>
-        
-        <!-- Botões de ação -->
-        <div class="buttons">
-            <button id="copiar">Copiar</button>
-            <button id="colar">Colar</button>
-            <button id="salvar">Salvar</button>
-            <button id="tema">Tema Claro/Escuro</button>
-        </div>
+        <h1>Bloco de Notas</h1>
 
-        <!-- Área de texto -->
         <textarea id="editor" placeholder="Digite ou cole seu texto aqui..."></textarea>
+
+        <div class="buttons">
+            <button id="copyBtn">Copiar</button>
+            <button id="pasteBtn">Colar</button>
+            <button id="clearBtn">Limpar</button>
+            <button id="themeBtn">Alternar Tema</button>
+        </div>
     </div>
 
-    <!-- Script JS -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
