@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo com container e conteiner</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center; /* centraliza na horizontal */
+      align-items: center;     /* centraliza na vertical */
+      height: 100vh;           /* ocupa a tela inteira */
+      margin: 0;
+      background: #f0f0f0;
+      flex-direction: column;  /* deixa os containers um em cima do outro */
+      gap: 20px;               /* espaço entre container e conteiner */
+    }
+
+    .container, .conteiner {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      background: white;
+      border: 2px solid black;
+    }
+
+    .container div, .conteiner div {
+      width: 60px;
+      height: 60px;
+      background: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Primeiro container -->
+  <div class="container">
+    <div>a</div>
+    <div>b</div>
+    <div>c</div>
+  </div>
+
+  <!-- Segundo conteiner -->
+  <div class="conteiner">
+    <div>d</div>
+    <div>e</div>
+    <div>f</div>
+  </div>
+</body>
+</html>
