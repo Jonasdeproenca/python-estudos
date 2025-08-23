@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #a10be6, #220044);
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mensagem {
+  position: absolute;
+  top: 15%;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  font-weight: bold;
+  text-shadow: 0 0 20px #c7005d;
+}
+
+/* Celipi aparece primeiro (maior) */
+.celipi {
+  font-size: 4em;
+  color: #ff2d75;
+  animation: showCelipi 6s ease forwards;
+}
+
+/* Papai te ama aparece depois */
+.papai {
+  font-size: 2.5em;
+  color: #ff66a3;
+  animation: showPapai 6s ease forwards;
+  animation-delay: 6s; /* só começa depois que "Celipi" some */
+}
+
+
+@keyframes showCelipi {
+  0% { opacity: 0; transform: scale(0.5); }
+  20% { opacity: 1; transform: scale(1.2); }
+  50% { opacity: 1; transform: scale(1); }
+  80% { opacity: 0.5; transform: scale(0.8); }
+  100% { opacity: 0; transform: scale(0.5); }
+}
+
+@keyframes showPapai {
+  0% { opacity: 0; transform: translateY(20px); }
+  30% { opacity: 1; transform: translateY(0); }
+  70% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
